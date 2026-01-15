@@ -1,0 +1,20 @@
+{
+  "colored-text:move-color-cell-forward": [
+    {
+      "modifiers": [
+        "Alt",
+        "Shift"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "colored-text:color-text": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "C"
+    }
+  ]
+}

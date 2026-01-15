@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "315650c05447eaf0",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a11543822f4fb64",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5e46ab1912c4aba2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Задание 3.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Задание 3"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f676ba24a6b03f9",
+    "type": "split",
+    "children": [
+      {
+        "id": "074f83301863954b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "394fcea41cff9d98",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Файловый менеджер"
+            }
+          },
+          {
+            "id": "099eaafef0161bcd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Поиск"
+            }
+          },
+          {
+            "id": "d44ff30260d6b7fb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Закладки"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "6ee50fa1dbc61bfc",
+    "type": "split",
+    "children": [
+      {
+        "id": "dec0fdeebc6a8e81",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f73c5a1323503f1c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ИНФА.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Обратные ссылки для ИНФА"
+            }
+          },
+          {
+            "id": "a7e9f96535de9346",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ИНФА.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Исходящие ссылки из ИНФА"
+            }
+          },
+          {
+            "id": "140074bfde83d232",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Теги"
+            }
+          },
+          {
+            "id": "310ad992d1a14e3f",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Все свойства"
+            }
+          },
+          {
+            "id": "894a1e9b08748c05",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ИНФА.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Структура ИНФА"
+            }
+          },
+          {
+            "id": "6133dfcfc51826db",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "bases:Создать новую базу": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "5e46ab1912c4aba2",
+  "lastOpenFiles": [
+    "Задание 2.md",
+    "src/Pasted image 20260115213411.png",
+    "Задание 3.md",
+    "Код/Задание 3/1.ods",
+    "Код/Задание 3",
+    "Код/Новая папка",
+    "src",
+    "Код/Задание 2/1.exe",
+    "Код/Задание 2/1.cpp",
+    "Код/Задание 2/Текстовый документ.txt",
+    "Код/Задание 2",
+    "Код"
+  ]
+}
