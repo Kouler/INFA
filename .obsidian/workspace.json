@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Задание 5.md",
+                "file": "Задание 13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Задание 5"
+              "title": "Задание 13"
             }
           }
         ],
@@ -267,7 +267,10 @@
   },
   "active": "20adca5f3c8f8a3e",
   "lastOpenFiles": [
+    "TODO, etc..md",
+    "TODO .md",
     "Задание 13.md",
+    "Код/8.py",
     "Задание 5.md",
     "Код/5.py",
     "2026-02-08.md",
@@ -280,7 +283,6 @@
     "Код/do.exe",
     "Код/2.cpp",
     "Код/Задание 2/do.exe",
-    "Код/Задание 2/2.cpp",
     "Задание 11.md",
     "Задание 3.md",
     "Задание 7.md",
