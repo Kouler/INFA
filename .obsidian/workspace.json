@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Задание 2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "Задание 2"
             }
           }
         ],
@@ -239,19 +239,20 @@
   },
   "active": "20adca5f3c8f8a3e",
   "lastOpenFiles": [
+    "Код/16.cpp",
+    "Задание 15.md",
+    "Код/15.py",
+    "TODO.md",
     "Задание 13.md",
     "Код/18/18_76715.xlsx",
     "Код/18/18_76686.xlsx",
     "Код/18",
     "Код/16.py",
-    "Задание 15.md",
-    "TODO.md",
     "Код/txt_files/17_4.txt",
     "Код/txt_files/17(3).txt",
     "Код/txt_files/17_3.txt",
     "Код/txt_files/17(2).txt",
     "Код/kek.cpp",
-    "Код/txt_files/17_2.txt",
     "Задание 11.md",
     "Задание 12.md",
     "TODO, etc..md",
