@@ -1,5 +1,29 @@
 from math import *
 import re
+from features import *
+
+import math
+a = 123456789
+b = 223456789
+arr = []
+
+for i in range(int(a ** 0.25), int(b ** 0.25) + 1):
+    show_percent(int(a ** 0.25), int(b ** 0.25) + 1, i, 10)
+    for j in range(2, int(i ** 0.5) + 1):
+        if not i % j:
+            break
+    else:
+        if i > 1:
+            arr.append([i ** 4, i ** 3])
+
+for pair in arr:
+    print(pair[0], pair[1])
+
+for i in range(45, 1233947):
+    show_percent(45, 1233947, i, step=10000)
+
+print('good')
+
 def def27858():
     dict = {}
 
@@ -50,4 +74,26 @@ def task85701():
             print(number)
 
 
-task85701()
+#task85701()
+def task29673():
+    for number in range(123456789,223456790):
+        show_percent(123456789, 223456790, number, 10000000)
+        maxdel = 1
+        count = 0
+        number_sqrt = sqrt(number)
+        for div in range(2, int(number_sqrt) - 1):
+            if number % div == 0:
+                count+=1 
+                if maxdel < div:
+                    maxdel = div
+                    
+        count*= 2
+        
+        if (number_sqrt == int(number_sqrt)):
+            count-= 1
+        count-= 2
+
+        if count == 3:
+            print(number, maxdel*2)
+
+task29673()
