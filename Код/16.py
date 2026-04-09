@@ -7,9 +7,9 @@ def task59694(n):
         return n
     else:
         return n + task59694(n-1)    
-task59694(1009)
+#task59694(1009)
 
-print(task59694(2024)-task59694(2021))
+#print(task59694(2024)-task59694(2021))
 
 def task81482(n):
     if n <= 7:
@@ -22,7 +22,7 @@ def g(n):
     else:
         return g(n-1)+4
 
-print(task81482(43000))       
+#print(task81482(43000))       
 
 def F(n):
     if n == 0:
@@ -42,6 +42,21 @@ def task51985():
         if F(n) > F(n+1):
             k+=1
     print(k)
-task51985()    
+#task51985()    
 
-        
+def task36871():
+    k=0
+    for n in range (0,1001):
+        if f36871(n) == 3:
+            k+=1
+    print(k)
+
+
+def f36871(n):
+    if n == 0:
+        return 0
+    if n > 0 and n%2==0:
+        return f36871(n/2)
+    if n%2!=0:
+        return 1+f36871(n-1)
+task36871()

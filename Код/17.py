@@ -8,7 +8,7 @@ def task37336():
             if s[i] + s[i+1] > max:
                 max = s[i] + s[i+1]
     print(pair_count, max)
-task37336()
+#task37336()
 
 
 def task59810():
@@ -36,7 +36,7 @@ def task59810():
 
     print(pc, min)
 
-task59810()
+#task59810()
 
 def task61397():
     s = [int(i) for i in open('./txt_files/17_3.txt')]
@@ -67,7 +67,7 @@ def task61397():
             if max_sum < four_sum:
                 max_sum = four_sum
     print(pc, max_sum)    
-task61397()
+#task61397()
 
 def task76714():
     s = [int(i) for i in open('./txt_files/17_4.txt')]
@@ -107,5 +107,27 @@ def task76714():
                 max_sum = three_sum
     print (pc, max_sum)
 
-task76714()
+#task76714()
 
+def task47221():
+    s = [el.strip() for el in open('./txt_files/17_5.txt')]
+
+    max3 = -10001
+    for num in s:
+        if num[-1] == '3' and int(num) > max3: max3 = int(num)
+
+    pc = 0
+    max_sum = 0
+
+    for i in range(0, len(s) -1):
+        if (
+            (s[i][-1] == '3') ^ (s[i+1][-1] == '3')
+        ) and (
+            (int(s[i])**2 + int(s[i+1])**2) >= (max3**2)
+        ):
+            pc+=1
+            if max_sum < int(s[i])**2 + int(s[i+1])**2:
+                max_sum = int(s[i])**2 + int(s[i+1])**2
+
+    print(pc, max_sum)
+task47221()

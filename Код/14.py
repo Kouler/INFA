@@ -48,3 +48,9 @@ def task76711():
                     if int(z + x, p) + int(x + y, p) == int(z + y + 'B', p):
                         print(x+y+z+'_'+str(p)+':', int(x + y + z, p))    
 task76711()  
+
+def task9367():
+    a = str(bitch((9**8+3**5-9), 3))
+    ac = a.count('2')
+    print(ac)
+task9367()

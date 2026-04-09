@@ -11,7 +11,7 @@ def task57422():
         if k == 10000:
             print(A)
             break
-print(task57422())                    
+#print(task57422())                    
 
 
 def task48426():
@@ -25,7 +25,7 @@ def task48426():
             break
             
     
-task48426()             
+#task48426()             
 
 def task43509():
     for A in range(0, 10000):
@@ -36,11 +36,23 @@ def task43509():
          if k == 999:
             print(A)
             break
-task43509()       
+#task43509()       
 
-
-
-
+def task14704():
+    count = 0
+    LIMIT = 300*300
+    for A in range(1,300):
+        k=0
+        for x in range (0,300):
+            for y in range (0,300):
+                if ((x<6)<=(x**2<A)) and ((y**2<=A)<=(y<=6)):
+                    k+=1
+        if k == LIMIT:
+            count+= 1
+        
+        #print(k)
+    print(count)
+task14704()
 
 
 
