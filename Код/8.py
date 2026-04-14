@@ -40,4 +40,17 @@ def task19059():
     print("doesn't exist")
 
 
-
+def dosrok():
+    s = 'АПРЕЛЬ'
+    last_count = 0
+    ss = ''
+    count = 0
+    for i in product(sorted(s), repeat=5):
+        count += 1
+        if (i[0]!='Ь') and (i[0]!='Р') and i.count('Л') >=2 and count%2==0:
+            print(i)
+            last_count = count
+            ss = i
+    
+    print("Last one:", last_count, "s:", ss)
+dosrok()

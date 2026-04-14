@@ -37,7 +37,7 @@ def task81471(n):
     else:
         return bitch((n % 3) * 4) + bitch(n)
 
-print('-------------')
+#print('-------------')
 #sto_tridtsat_pyat_blyat = 135
 for i in range(0, 1000000):
     if int(task81471(i), 3) > 135:
@@ -50,7 +50,7 @@ def get_result(a, b, c):
 
     return int(str(left) + str(right), 10) if left > right else int(str(right) + str(left), 10)
 
-print('--------------')
+#print('--------------')
 def task13590():
     for a in range(1, 10):
         for b in range(0, 10):
@@ -60,9 +60,9 @@ def task13590():
                     return
 
 
-task13590()
+#task13590()
 
-print('--------------')
+#print('--------------')
 
 def get_res(a, b, c, d):
     ab = a + b
@@ -79,8 +79,8 @@ def task13563():
                         count+=1
     print(count)
                         
-print(get_res(7,5,1,1))
-task13563()                        
+#print(get_res(7,5,1,1))
+#task13563()                        
 
     
 def task76673(n):
@@ -95,7 +95,7 @@ def task76673(n):
     
     return abs(n - int(s,2))
 
-print(task76673(28))
+#print(task76673(28))
 
 max = 0
 for i in range(1000000000, 1, -1):
@@ -106,4 +106,21 @@ for i in range(1000000000, 1, -1):
     elif max > res:
         break
 
-print(max)
+#print(max)
+
+def dosrok(n):
+    s = bin(n)[2:]
+    
+    if s.count('1') % 2 == 0:
+        s = '10' + s[2:] + '0'
+    else:
+        s= '11' + s[2:] + '1'
+    
+    return int(s,2)
+
+v = 0
+for i in range(1000,0,-1):
+    if dosrok(i) > 480:
+        v = i
+
+print("Minimum:", v)

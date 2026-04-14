@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Задание 3.md",
+                "file": "Задание 13.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Задание 3"
+              "title": "Задание 13"
             }
           },
           {
@@ -111,16 +111,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Теория игр(19-21).md",
+                "file": "Задание 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Теория игр(19-21)"
+              "title": "Задание 7"
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -293,8 +292,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9b65657419915550",
+  "active": "5e46ab1912c4aba2",
   "lastOpenFiles": [
+    "Задание 3.md",
+    "Задание 7.md",
+    "Задание 11.md",
+    "Задание 5.md",
+    "Задание 12.md",
+    "Задание 15.md",
+    "Задание 13.md",
+    "Теория игр(19-21).md",
+    "Код/2.py",
     "Код/18/~$18_40734.ods",
     "Код/18/18_40734.ods",
     "Код/txt_files/17_5.txt",
@@ -303,22 +311,12 @@
     "Код/features.py",
     "Код/kek.js",
     "Код/25.py",
-    "Теория игр(19-21).md",
-    "Задание 13.md",
     "Без названия",
     "src/Без названия.md",
-    "Код/18/9CC58000",
-    "Код/18/~$18_46976.ods",
-    "Задание 7.md",
-    "Задание 15.md",
     "TODO.md",
-    "Задание 11.md",
-    "Задание 12.md",
     "TODO, etc..md",
     "TODO .md",
-    "Задание 5.md",
     "2026-02-08.md",
-    "Задание 3.md",
     "Задание 2.md",
     "src/Pasted image 20260115213411.png"
   ]
