@@ -130,4 +130,36 @@ def task47221():
                 max_sum = int(s[i])**2 + int(s[i+1])**2
 
     print(pc, max_sum)
-task47221()
+#task47221()
+
+def task59842():
+    s = [int(i) for i in open('./txt_files/1777_59842.txt')]
+
+    pc = 0
+    max = -1000001
+    for num in s:
+        if str(num)[-2:] == '29' and max < num:
+            print(num)
+            max = num
+
+    sum_three = 0 
+    max_sum = 0
+
+    print(max)
+
+    for i in range (0, len(s) - 2):
+        five_count = 0
+        sum_three = sum(s[i:i+3])
+        
+        for shift in range(0, 3):
+            if abs(s[i + shift]) > 9999 and abs(s[i + shift]) < 100_000:
+                five_count+= 1
+
+        if (five_count == 2 and sum_three <= max):
+                pc+=1
+                if max_sum < sum_three:
+                    max_sum = sum_three
+    print(pc, max_sum)
+
+task59842()
+
