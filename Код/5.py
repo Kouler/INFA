@@ -124,3 +124,19 @@ for i in range(1000,0,-1):
         v = i
 
 print("Minimum:", v)
+
+def task18785(n):
+    s = bin(n)[2:]
+    if s[-1] == "0":
+        s = "1" + s + "0"
+    else:
+        s = "11" + s + "11"
+
+    return  int(s,2)
+        
+
+k = 0  
+for i in range(10000, 0, -1):  
+    if task18785(i) > 52:
+        k = i    
+print(k)
