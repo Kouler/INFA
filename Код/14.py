@@ -70,7 +70,7 @@ def dosrok():
         if char in "ACEGIKMOQ":
             count += 1
     print(count)
-dosrok()    
+#dosrok()    
 
 
 
@@ -81,3 +81,9 @@ def hp(n, b):
         a += alphavet[n % b]
         n//=b
     return a[::-1]
+
+def task40730():
+    s = bitch(3*125**6+2*25**9+5**12-625, 5)
+    count = s.count("0")
+    print(count)
+task40730()

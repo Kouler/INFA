@@ -161,5 +161,29 @@ def task59842():
                     max_sum = sum_three
     print(pc, max_sum)
 
-task59842()
+#task59842()
 
+def task68518():
+    s = [int(i) for i in open('./txt_files/17_68518.txt')]
+    max = 1
+    min = 100000
+    pc = 0
+    for num in s:
+        if ((num % 19 == 0) and (num < min)):
+            min = num
+
+    double_sum = 0
+
+    for i in range(0 , len(s) - 1):
+        double_count = 0
+        double_sum = sum(s[i:i+2])
+        dividable_count = 0
+        for shift in range (0, 2):
+            if s[i + shift] % min == 0 :
+                dividable_count += 1
+        if dividable_count > 0:
+            pc += 1
+            if double_sum > max:
+                max = double_sum
+    print(pc, max)
+task68518()

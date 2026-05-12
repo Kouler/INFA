@@ -53,4 +53,17 @@ def dosrok():
             ss = i
     
     print("Last one:", last_count, "s:", ss)
-dosrok()
+#dosrok()
+
+def task15850():
+    s = "АИОУЭ"
+    k = 0
+    for i in product(sorted(s), repeat = 4):
+        slovo = ''.join(i)
+        k += 1
+        if k<10:
+            print(i)
+        if (slovo == 'ИААЭ'):
+            print(k)
+            break
+task15850()

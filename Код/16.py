@@ -59,4 +59,13 @@ def f36871(n):
         return f36871(n/2)
     if n%2!=0:
         return 1+f36871(n-1)
-task36871()
+#task36871()
+
+def task6189(n):
+    if n == 1:
+        return 1
+    if n == 2:
+        return 1
+    if n > 2:
+        return (task6189(n-2)*n)
+print(task6189(7))
