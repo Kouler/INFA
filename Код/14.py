@@ -76,7 +76,7 @@ def dosrok():
 
 def hp(n, b):
     a = ''
-    alphavet = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    alphavet = sorted('1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     while n > 0:
         a += alphavet[n % b]
         n//=b
@@ -86,4 +86,16 @@ def task40730():
     s = bitch(3*125**6+2*25**9+5**12-625, 5)
     count = s.count("0")
     print(count)
-task40730()
+#task40730()
+
+def task76711():
+    alph = sorted("1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+    for p in range(12, 37):
+        for x in alph[1:p]:
+            for y in alph[:p]:
+                for z in alph[1:p]:   
+                    if int(z + x, p) + int(x + y, p) == int(z+y+'B',p):
+                        print(int(x + y +z, p))
+task76711()
+
+    

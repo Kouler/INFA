@@ -187,3 +187,40 @@ def task68518():
                 max = double_sum
     print(pc, max)
 task68518()
+
+def task76685():
+    x = [int(i) for i in open('./txt_files/17_76685.txt')]
+    max = 1
+    min = 100000
+    pc = 0
+    
+    bobobo = 0
+    for num in x:
+        if num > max:
+            max = num
+        if num < min:
+            min = num
+    for i in range(0, len(x) - 2):
+        be = 0
+        ba = 0
+        bu = 0
+
+        triple_summ = 0
+        for y in range(3):
+            triple_summ+= x[i + y]
+            if  999 < x[i + y] < 10000:
+                be += 1
+            if str(x[i+y])[-1] == str(max)[-1]:
+                ba += 1
+            if str(x[i+y])[-1] == str(min)[-1]:
+                bu += 1
+        if be > 1 and ba > 0 and bu == 0:
+            pc += 1
+            if bobobo < triple_summ:
+                bobobo = triple_summ
+    print(pc, bobobo)
+task76685()
+        
+
+
+                    

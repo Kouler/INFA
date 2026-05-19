@@ -69,3 +69,16 @@ def task6189(n):
     if n > 2:
         return (task6189(n-2)*n)
 print(task6189(7))
+
+def task35474(n):
+    if n == 0:
+        return 0
+    if (n > 0) and (n % 3 == 0):
+        return task35474(n//3)
+    if (n % 3 > 0):
+        return ((n % 3) + task35474(n - (n % 3)))
+     
+for i in range(1000):
+        if task35474(i) == 11:
+            print(i)
+            break
