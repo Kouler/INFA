@@ -136,7 +136,18 @@ def task18785(n):
         
 
 k = 0  
-for i in range(10000, 0, -1):  
-    if task18785(i) > 52:
-        k = i    
-print(k)
+#for i in range(10000, 0, -1):  
+#    if task18785(i) > 52:
+#        k = i    
+#print(k)
+
+def task15974(n):
+    s = bin(n)[2:]
+    if n % 2 == 0:
+        s = s + '10'
+    if n % 2 != 0:
+        s = s + '01'
+    return(int(s, 2))
+for i in range (0, 10000):
+    if task15974(i) < 102:
+        print(task15974(i))

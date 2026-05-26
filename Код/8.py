@@ -66,4 +66,14 @@ def task15850():
         if (slovo == 'ИААЭ'):
             print(k)
             break
-task15850()
+#task15850()
+
+def task16439():
+    s = 'АБВГ'
+    k = 0
+    for i in product(s, repeat=6):
+        slovo = ''.join(i)
+        if slovo[0] != 'А' and 'АА' and'ББ'and'ВВ'and'ГГ' not in slovo:
+            k += 1
+    print(k)
+task16439()

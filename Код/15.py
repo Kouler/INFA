@@ -52,7 +52,16 @@ def task14704():
         
         #print(k)
     print(count)
-task14704()
+#task14704()
 
-
-
+def task18499():
+    for A in range(1,100):
+        k = 0
+        for x in range(0,100):
+            for y in range(0,100):
+                if (2*x + 3*y > 40) or ((x<A) and (y<=A)) == 1:
+                    k+=1
+        if k == 100*100:
+            print(A)
+            break
+task18499()

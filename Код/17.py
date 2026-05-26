@@ -186,7 +186,7 @@ def task68518():
             if double_sum > max:
                 max = double_sum
     print(pc, max)
-task68518()
+#task68518()
 
 def task76685():
     x = [int(i) for i in open('./txt_files/17_76685.txt')]
@@ -219,8 +219,30 @@ def task76685():
             if bobobo < triple_summ:
                 bobobo = triple_summ
     print(pc, bobobo)
-task76685()
+#task76685()
         
+def task39762():
+    x = [int(x) for x in open('./txt_files/17_39762.txt')]
+    min = 10000
+    max = 0
+    pc = 0
+    dsm = 0
+    for num in x:
+        if num > max:
+            max = num
 
+    for i in range ( 0, len(x)-1):
+        ds = 0
+        dm = 1
+        for y in range(2):
+            ds += x[i+y]
+            dm *= x[i+y]
+
+        if ds % 7 == 0 and dm % 15 == 0:
+            pc +=1
+            if dsm < ds:
+                dsm = ds
+    print(pc, dsm)
+task39762()     
 
                     

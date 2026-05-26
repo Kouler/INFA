@@ -96,6 +96,10 @@ def task76711():
                 for z in alph[1:p]:   
                     if int(z + x, p) + int(x + y, p) == int(z+y+'B',p):
                         print(int(x + y +z, p))
-task76711()
+#task76711()
 
-    
+def task16445():
+     s = bitch(49**6 + 7**18 - 21, 7)
+     count = s.count('6')
+     print(count)
+task16445()

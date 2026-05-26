@@ -68,7 +68,7 @@ def task6189(n):
         return 1
     if n > 2:
         return (task6189(n-2)*n)
-print(task6189(7))
+#print(task6189(7))
 
 def task35474(n):
     if n == 0:
@@ -78,7 +78,20 @@ def task35474(n):
     if (n % 3 > 0):
         return ((n % 3) + task35474(n - (n % 3)))
      
-for i in range(1000):
-        if task35474(i) == 11:
-            print(i)
-            break
+#for i in range(1000):
+#        if task35474(i) == 11:
+#            print(i)
+#            break
+
+def taskg(n):
+    if n == 1:
+        return 1
+    if n>=2:
+        return taskf(n-1)+taskg(n-1)
+def taskf(n):
+    if n == 1:
+        return 1
+    if n>=2:
+        return taskf(n-1)-taskg(n-1)
+    
+print(taskf(5)//taskg(5))

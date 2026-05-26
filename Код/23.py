@@ -13,4 +13,13 @@ def task58225(num, end, was_forty):
     else:
         return task58225(num - 2, end, was_forty) + task58225(num // 2, end, was_forty)
     
-print(task58225(80, 1, False))
+#print(task58225(80, 1, False))
+
+def task18724(st, en):
+    if st > en:
+        return 0
+    if st == en:
+        return 1
+    if st < en:
+        return(task18724(st+1,en)+task18724(st*3,en)+task18724(st+2,en))
+print(task18724(1,10)*task18724(10,12)*task18724(12,15))
