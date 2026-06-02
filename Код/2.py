@@ -13,19 +13,14 @@ def task18704():
                     if ((x or (not(y))) and (not(w == z)) or w) == 1:
                         print(z, y, w, x)
                         
-task18704()
-#x y w z 
-#0 0 0 1
-#0 1 0 1
-#1 1 0 1
-#0 0 0 1
-#0 0 1 0
-#0 0 1 1
-#0 1 1 0
-#0 1 1 1
-#1 0 0 1
-#1 0 1 0
-#1 0 1 1
-#1 1 0 1
-#1 1 1 0
-#1 1 1 1
+# task18704()
+
+def task84664():
+    print('x w z y')
+    for x in range(2):
+        for y in range(2):
+            for z in range(2):
+                for w in range(2):
+                    if ((w<=y) <= (z<=x) or (not(z))) == 1:
+                        print(x, w, z, y)
+task84664()
