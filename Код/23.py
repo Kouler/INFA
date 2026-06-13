@@ -22,4 +22,13 @@ def task18724(st, en):
         return 1
     if st < en:
         return(task18724(st+1,en)+task18724(st*3,en)+task18724(st+2,en))
-print(task18724(1,10)*task18724(10,12)*task18724(12,15))
+# print(task18724(1,10)*task18724(10,12)*task18724(12,15))
+
+def task5064(str, end):
+    if str > end:
+        return 0
+    if str == end:
+        return 1
+    if str < end:
+        return(task5064(str +1, end) + task5064(str *2, end) + task5064(str *3, end))
+print(task5064(1,13))

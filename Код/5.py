@@ -207,5 +207,27 @@ for n in range(k2 - 100, k2 + 100):
     r = int(s, 2)
     if 987654321 <= r and r <= 2123456789:
         o2 = n
-print(o2 - o1 + 1)
+# print(o2 - o1 + 1)
  
+def task76673(n):
+    s = bin(n)[2:]
+    if s.count('0') > s.count('1'):
+        i = s.find('0')
+        if i >= 0:
+            s = s [:i] + '1' + s[i+1:]
+    else:
+        i = s.rfind('1')
+        if i >= 0:
+            s = s [:i] + '0' + s[i+1:]
+    r = int(s, 2)
+    return(abs(n-r))
+max_r=0
+min_n=0
+for num in range(0, 10**9 +1):
+    if max_r < task76673(num):
+        max_r = task76673(num)
+        min_n = num
+    if num % 10000000 == 0:
+        print(min_n)
+
+    

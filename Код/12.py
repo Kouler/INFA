@@ -32,3 +32,10 @@ while '111' in strok or '222' in strok:
         if '222' in strok:
                  strok = strok.replace('222','1',1)
 print(strok)
+
+stroke = ''
+while '00' not in stroke:
+        stroke = stroke.replace('033','1302', 1)
+        stroke = stroke.replace('03','120', 1)
+        stroke = stroke.replace('023','203', 1)
+        stroke = stroke.replace('02','20', 1)

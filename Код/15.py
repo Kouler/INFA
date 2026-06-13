@@ -64,4 +64,16 @@ def task18499():
         if k == 100*100:
             print(A)
             break
-task18499()
+# task18499()
+
+def task292039():
+    for a in range(1,100):
+        k=0
+        for x in range(0,100):
+            for y in range(0,100):
+                if (2*x + 7*y < a) or ((x>=y) or (y>6)) == 1:
+                    k+=1
+        if k == 100*100:
+            print(a)
+            break
+task292039()

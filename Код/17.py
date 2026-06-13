@@ -243,6 +243,19 @@ def task39762():
             if dsm < ds:
                 dsm = ds
     print(pc, dsm)
-task39762()     
+# task39762()     
 
                     
+def task70544():
+    arr = [int(x) for x in open('./txt_files/17_70544.txt')]
+
+    ans = []
+    minN = min(arr)
+
+    for i in range(0,len(arr)-1):
+        x,y = arr[i], arr[i+1]
+        if (x % 16 == minN) or (y % 16 == minN):
+            ans +=[x+y]
+    return(len(ans), max(ans))
+print(task70544())    
+    

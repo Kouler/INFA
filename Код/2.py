@@ -24,3 +24,13 @@ def task84664():
                     if ((w<=y) <= (z<=x) or (not(z))) == 1:
                         print(x, w, z, y)
 task84664()
+
+def task76105():
+    print('x w z y')
+    for x in range(2):
+        for y in range(2):
+            for z in range(2):
+                for w in range(2):
+                    if (((x<= (not(y))) and (x or w)) <=(not(z))) == 0:
+                        print(x, w, z, y)
+task76105()

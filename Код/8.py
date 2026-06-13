@@ -87,4 +87,14 @@ def task5055():
         if slovo[0] == 'о':
             print(k)
             break 
-task5055()
+# task5055()
+def task9645():
+    alf = 'влту'
+    k=0
+    for i in product(sorted(alf), repeat=4):
+        k+=1
+        slovo =''.join(i)
+        if k == 98:
+            print(slovo)
+            break
+task9645()

@@ -6,6 +6,13 @@ def task48402():
             answer = (number / 81)
             return (answer)
 
+def task48397():
+    x = '0123456789'
+    for digit in x:
+        number = int('8'+ digit + '71', 13) + int('3'+ digit + 'DF',17)
+        if number % 197 == 0:
+            return (number // 197)
+print(task48397())
 #print(task48402())
             
 
@@ -102,4 +109,4 @@ def task16445():
      s = bitch(49**6 + 7**18 - 21, 7)
      count = s.count('6')
      print(count)
-task16445()
+# task16445()

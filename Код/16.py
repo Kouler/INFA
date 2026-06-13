@@ -94,4 +94,11 @@ def taskf(n):
     if n>=2:
         return taskf(n-1)-taskg(n-1)
     
-print(taskf(5)//taskg(5))
+# print(taskf(5)//taskg(5))
+
+def task55812(n):
+    if n >=2025:
+        return n
+    if n < 2025:
+        return(n+3) + task55812(n+3)
+print(task55812(23)-task55812(21))
