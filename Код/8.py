@@ -98,3 +98,13 @@ def task9645():
             print(slovo)
             break
 task9645()
+
+def task37143():
+    alf = 'гепард'
+    k = 0 
+    for i in product(alf, repeat =5):
+        slovo = ''.join(i)
+        if slovo[0]!='а' and slovo[-1]!='е' and slovo.count('г') == 1:
+            k+=1
+    return k
+print(task37143())

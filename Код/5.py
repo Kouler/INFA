@@ -173,61 +173,74 @@ def task81471(n):
 
 # print(count)
 
-def summ(n):
-    sumi=0
-    while n>0:
-        sumi+=n%10
-        n=n//10
-    return sumi
-o1 = 0
-o2 = 0
-q1 = bin(987654321)[2:]
-q2 = int(q1[:len(q1) - 3], 2)
+# def summ(n):
+#     sumi=0
+#     while n>0:
+#         sumi+=n%10
+#         n=n//10
+#     return sumi
+# o1 = 0
+# o2 = 0
+# q1 = bin(987654321)[2:]
+# q2 = int(q1[:len(q1) - 3], 2)
  
-for n in range(q2 - 100, q2 + 100):
-    s = bin(n)[2:]
-    for i in range(3):
-        if summ(int(s,2))%2==0:
-            s += '0'
-        else:
-            s += '1'
-    r = int(s, 2)
-    if 987654321 <= r and r <= 2123456789:
-        o1 = n
-        break
-k1 = bin(2123456789)[2:]
-k2 = int(k1[:len(k1) - 3],2)
-for n in range(k2 - 100, k2 + 100):
-    s = bin(n)[2:]
-    for i in range(3):
-        if summ(int(s, 2)) % 2 == 0:
-            s += '0'
-        else:
-            s += '1'
-    r = int(s, 2)
-    if 987654321 <= r and r <= 2123456789:
-        o2 = n
-# print(o2 - o1 + 1)
+# for n in range(q2 - 100, q2 + 100):
+#     s = bin(n)[2:]
+#     for i in range(3):
+#         if summ(int(s,2))%2==0:
+#             s += '0'
+#         else:
+#             s += '1'
+#     r = int(s, 2)
+#     if 987654321 <= r and r <= 2123456789:
+#         o1 = n
+#         break
+# k1 = bin(2123456789)[2:]
+# k2 = int(k1[:len(k1) - 3],2)
+# for n in range(k2 - 100, k2 + 100):
+#     s = bin(n)[2:]
+#     for i in range(3):
+#         if summ(int(s, 2)) % 2 == 0:
+#             s += '0'
+#         else:
+#             s += '1'
+#     r = int(s, 2)
+#     if 987654321 <= r and r <= 2123456789:
+#         o2 = n
+# # print(o2 - o1 + 1)
  
-def task76673(n):
-    s = bin(n)[2:]
-    if s.count('0') > s.count('1'):
-        i = s.find('0')
-        if i >= 0:
-            s = s [:i] + '1' + s[i+1:]
-    else:
-        i = s.rfind('1')
-        if i >= 0:
-            s = s [:i] + '0' + s[i+1:]
-    r = int(s, 2)
-    return(abs(n-r))
-max_r=0
-min_n=0
-for num in range(0, 10**9 +1):
-    if max_r < task76673(num):
-        max_r = task76673(num)
-        min_n = num
-    if num % 10000000 == 0:
-        print(min_n)
+# def task76673(n):
+#     s = bin(n)[2:]
+#     if s.count('0') > s.count('1'):
+#         i = s.find('0')
+#         if i >= 0:
+#             s = s [:i] + '1' + s[i+1:]
+#     else:
+#         i = s.rfind('1')
+#         if i >= 0:
+#             s = s [:i] + '0' + s[i+1:]
+#     r = int(s, 2)
+#     return(abs(n-r))
+# max_r=0
+# min_n=0
+# for num in range(0, 10**9 +1):
+#     if max_r < task76673(num):
+#         max_r = task76673(num)
+#         min_n = num
+#     if num % 10000000 == 0:
+#         print(min_n)
 
-    
+def task75242(n):
+    s = bitch(n, 3)
+    new_s = ''
+    for digit in s:
+        # if digit == '0': new_s+= '2'
+        # elif digit == '2': new_s += '0'
+        # else: new_s+= '1'
+        new_s+= '2' if digit == '0' else ('0' if digit == '2' else '1')
+    b = int(new_s, 3)
+    return abs(n - b)
+for n in range(1,10000000):
+    if task75242(n) == 1864246:
+        print(n)
+        break

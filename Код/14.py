@@ -12,7 +12,7 @@ def task48397():
         number = int('8'+ digit + '71', 13) + int('3'+ digit + 'DF',17)
         if number % 197 == 0:
             return (number // 197)
-print(task48397())
+# print(task48397())
 #print(task48402())
             
 
@@ -110,3 +110,9 @@ def task16445():
      count = s.count('6')
      print(count)
 # task16445()
+
+def task60292():
+    x = bitch(3*3125**8+2*625**7-4*625**6+3*125**5-2*25**4-2024, 25)
+    count = x.count("0")
+    print(count)
+task60292()

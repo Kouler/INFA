@@ -31,4 +31,10 @@ def task5064(str, end):
         return 1
     if str < end:
         return(task5064(str +1, end) + task5064(str *2, end) + task5064(str *3, end))
-print(task5064(1,13))
+# print(task5064(1,13))
+
+def task6965(s, e):
+    if s > e: return 0
+    if s == e: return 1
+    if s < e: return(task6965(s+1, e)+task6965(s*2,e)+task6965(s*2+1, e))
+print(task6965(2,16))

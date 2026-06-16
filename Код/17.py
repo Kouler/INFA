@@ -258,4 +258,41 @@ def task70544():
             ans +=[x+y]
     return(len(ans), max(ans))
 print(task70544())    
+
+
+def is_five(n): return (9999<n<100000)
+def mod_tree(n): return (n%3==0)
+def mod_seven(n): return (n%7==0)
+
+
+def task68250():
+    arr = [int(x) for x in open('./txt_files/17_68250.txt')]
     
+    ans = []
+    max538 = max(x for x in arr if str(x)[-3:] =='538')
+
+
+    for i in range(0, len(arr) - 3):
+        count_of_five = 0
+        count_of_not_five = 0
+        count_of_mod_tree = 0
+        count_of_mod_seven = 0
+
+        #x,y,w,z = arr[i],arr[i+1],arr[i+2],arr[i+3]
+        four_sum = 0 #arr[i]+arr[i+1]+arr[i+2]+arr[i+3]
+        for i_shift in range(4):
+            four_sum+= arr[i + i_shift]
+            if is_five(arr[i + i_shift]): count_of_five+= 1
+            else: count_of_not_five+= 1
+            if mod_tree(arr[i + i_shift]): count_of_mod_tree +=1
+            if mod_seven(arr[i + i_shift]): count_of_mod_seven +=1
+
+        if (count_of_five >= 2 and count_of_not_five >= 1
+             and count_of_mod_tree > count_of_mod_seven
+             and max538*2>four_sum>max538):
+            ans+=[four_sum]
+    print(len(ans), max(ans))
+task68250()
+
+
+            # and is_five(y) and (not(is_five(w)))

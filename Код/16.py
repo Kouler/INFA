@@ -101,4 +101,14 @@ def task55812(n):
         return n
     if n < 2025:
         return(n+3) + task55812(n+3)
-print(task55812(23)-task55812(21))
+# print(task55812(23)-task55812(21))
+
+def task58226(n):
+    if n == 1: return 1
+    if n == 2: return 2
+    if n > 2 and n % 2 == 0:
+        return ((3*n+task58226(n-3))//3)
+    if n > 2 and n % 2 != 0:
+        return ((7*n+task58226(n-1)-task58226(n-2))//5)
+print(task58226(35))
+    
